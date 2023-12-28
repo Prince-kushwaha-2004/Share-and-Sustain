@@ -1,0 +1,133 @@
+
+.navbar{
+    height: 4rem;
+    background-color: rgb(228, 249, 128);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px  rgb(2, 87, 39);
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+}
+body{
+    background: linear-gradient(45deg,rgb(247, 247, 105),rgb(247, 163, 79));
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: rgb(50, 149, 17);
+}
+.logo img{
+    width: 4rem;
+}
+.navOption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    
+}
+.navOptions a{
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+    font-weight: 600;
+}
+.user button{
+    border: 0;
+    background-color: rgba(61, 224, 32, 0.912);
+    color: white;
+    width: 5rem;
+    padding: .8rem;
+    border-radius: 2rem;
+    transition: all linear .5s;
+}
+.user button:hover{
+    border:1px solid black;
+    color: black;
+}
+#logo{
+    width: 20rem;
+}
+#welcome{
+    display: flex;
+    font-size:1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.content h1{
+    position: absolute;
+    margin-top: 4rem;
+    color: rgb(8, 94, 8);
+}
+
+.signupform,.loginform{
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    width: 25rem;
+    height: 37rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: rgb(12, 101, 12);
+    box-shadow: rgba(0, 0, 0, 0.638) 0px 10px 20px, rgba(0, 0, 0, 0.644) 0px 6px 6px;
+    transition: all linear .8s;
+    z-index: 5;
+    
+}
+form img{
+    display: block;
+    width: 5rem;
+    position: relative;
+    left: 10rem;
+    
+}
+
+.signupform input,.loginform input{
+    width: 70%;
+    border: 0;
+    height: 2rem;
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.signupform button,.loginform button{
+    border: 0;
+    padding: .5rem;
+    width: 75%;
+    border-radius: 2rem;
+    margin: 2rem;
+    padding: .8rem;
+    background-color: rgb(39, 159, 23);
+    transition: all  .5s;
+}
+.signupform button:hover,.loginform button:hover{
+    color: white;
+    border: 1px solid white;
+}
+.signupformshow{
+    top: 51%;
+}
+.close{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(230, 232, 154, 0.273);
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: none;
+}
+
+
+
+
+
