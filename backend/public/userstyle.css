@@ -1,12 +1,15 @@
+p{
 
+    font-family: 'Montserrat', sans-serif;
+}
 .navbar{
     height: 4rem;
-    background-color: rgb(228, 249, 128);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    box-shadow: 2px 2px 2px 2px  rgb(2, 87, 39);
+    box-shadow: .5px .5px 10px .5px  #cec9bb;
     margin: 0;
     position: fixed;
     left: 0;
@@ -14,12 +17,15 @@
 
 }
 body{
-    background: linear-gradient(45deg,rgb(247, 247, 105),rgb(247, 163, 79));
+    background-color: white;
 }
 .logo{
     display: flex;
     align-items: center;
-    color: rgb(50, 149, 17);
+    color: #BD1E51;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 2px;
+    
 }
 .logo img{
     width: 4rem;
@@ -34,32 +40,35 @@ body{
 .navOptions a{
     text-decoration: none;
     padding: 1rem;
-    color: black;
+    color: #696969;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    transition: all linear .4s;
+}
+.navOption a:hover{
+    text-decoration: underline;
+    color: #490B3D;
+}
+.user button{
+    border: 0;
+    background-color: #BD1E51;
+    color: white;
+    width: 5rem;
+    padding: .8rem;
+    border-radius: 2rem;
+    transition: all linear .5s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.user button:hover{
+    background-color:#490B3D;
+    color: white;
+}
+#logo{
+    width: 20rem;
 }
 .user{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(164, 19, 11);
 }
-.user button{
-    border: 0;
-    background-color: rgba(61, 224, 32, 0.912);
-    color: white;
-    width: 5rem;
-    padding: .8rem;
-    margin-left: 1rem;
-    border-radius: 2rem;
-    transition: all linear .5s;
-}
-.user button:hover{
-    border:1px solid black;
-    color: black;
-}
-
-
-
-
-
-

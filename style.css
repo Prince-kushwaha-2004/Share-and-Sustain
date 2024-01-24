@@ -1,12 +1,15 @@
+p{
 
+    font-family: 'Montserrat', sans-serif;
+}
 .navbar{
     height: 4rem;
-    background-color: rgb(228, 249, 128);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    box-shadow: 2px 2px 2px 2px  rgb(2, 87, 39);
+    box-shadow: .5px .5px 10px .5px  #cec9bb;
     margin: 0;
     position: fixed;
     left: 0;
@@ -14,12 +17,15 @@
 
 }
 body{
-    background: linear-gradient(45deg,rgb(247, 247, 105),rgb(247, 163, 79));
+    background-color: white;
 }
 .logo{
     display: flex;
     align-items: center;
-    color: rgb(50, 149, 17);
+    color: #BD1E51;
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 2px;
+    
 }
 .logo img{
     width: 4rem;
@@ -34,39 +40,103 @@ body{
 .navOptions a{
     text-decoration: none;
     padding: 1rem;
-    color: black;
+    color: #696969;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    transition: all linear .4s;
+}
+.navOption a:hover{
+    text-decoration: underline;
+    color: #490B3D;
 }
 .user button{
     border: 0;
-    background-color: rgba(61, 224, 32, 0.912);
+    background-color: #BD1E51;
     color: white;
     width: 5rem;
     padding: .8rem;
     border-radius: 2rem;
     transition: all linear .5s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .user button:hover{
-    border:1px solid black;
-    color: black;
+    background-color:#490B3D;
+    color: white;
 }
 #logo{
     width: 20rem;
+}
+.content{
+    margin-left: 1rem;
 }
 #welcome{
     display: flex;
     font-size:1.5rem;
     justify-content: center;
     align-items: center;
+    
 }
 .content h1{
     position: absolute;
-    margin-top: 4rem;
-    color: rgb(8, 94, 8);
+    margin-top: 2.5rem;
+    color: #490B3D;
+    z-index: -1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
-
+.content h1 span{
+    color: #F1B814;
+}
+/* para */
+.para2{
+    display: flex;
+    flex-direction: row;
+}
+.para2 img{
+    width: 35rem;
+    margin: 2rem;
+    border-radius: 5rem;
+    box-shadow: 5px 5px 5px 5px  #68655b;
+}
+.para2 h2{
+    color: #BD1E51;
+    font-size: 3rem;
+    margin-left: 2rem
+}
+.para2 p{
+    margin: 0rem 2rem;
+    font-size: 1.2rem;
+}
+/* container */
+.container{
+    margin: 1rem;
+    background-color: #F1B814;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+.container h2{
+    color: #BD1E51;
+    font-size: 3rem;
+}
+.container h3{
+    color: #490B3D;
+    font-size: 1.7rem;
+}
+.container p{
+    color: rgb(51, 41, 41);
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.container .flex{
+    display: flex;
+    flex-direction: row;
+}
+/* login-signup */
 .signupform,.loginform{
     backdrop-filter: blur(5px);
+    background-color: #e5df633f;
     position: absolute;
     top: -50%;
     left: 50%;
@@ -76,7 +146,7 @@ body{
     height: 37rem;
     border-radius: 1rem;
     text-align: center;
-    color: rgb(12, 101, 12);
+    color: #490B3D;
     box-shadow: rgba(0, 0, 0, 0.638) 0px 10px 20px, rgba(0, 0, 0, 0.644) 0px 6px 6px;
     transition: all linear .8s;
     z-index: 5;
@@ -106,7 +176,8 @@ form img{
     border-radius: 2rem;
     margin: 2rem;
     padding: .8rem;
-    background-color: rgb(39, 159, 23);
+    background-color: #BD1E51;
+    color: white;
     transition: all  .5s;
 }
 .signupform button:hover,.loginform button:hover{
@@ -120,14 +191,95 @@ form img{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(230, 232, 154, 0.273);
+    background-color: rgba(154, 244, 222, 0.273);
     width: 100vw;
     height: 100vh;
     z-index: 2;
     display: none;
 }
+.footer{
+    background-color: #490B3D;
+    height: 30rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .form{
+    width: 50%;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #501144;
+    border-radius: 2rem;
+}
+.footer form input{
+    border: 0;
+    border-radius: 10px;
+    margin: 5px;
+    height: 1rem;
+    width: 43%;
+    padding: 1rem;
+    background-color: #490B3D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+.footer form #email{
+    width: 92%;
+}
+.footer form textarea{
+    border: 0;
+    padding: 1rem;
+    width: 92%;
+    margin: .5rem;
+    border-radius: 10px;
+    background-color: #490B3D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+}
+.footer form button{
+    border: 0;
+    background-color: #BD1E51;
+    color: white;
+    width: 5rem;
+    margin-left: 1rem;
+    padding: .8rem;
+    border-radius: 2rem;
+    transition: all linear .5s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    
+}
+.footer form button:hover{
+    background-color:#490B3D;
+    color: white;
+}
+.footer .contect{
+    width: 50%;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #501144;
+    border-radius: 2rem;
 
+}
+.footer .contect h2{
+    color: #68655b;
+    background-color: #490B3D;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.footer .contect .icons{
+    color: #68655b;
+    background-color: #490B3D;
+    padding: 1rem;
+    border-radius: 10px;
 
-
-
+}
+.footer .contect .icons i{
+    padding: 1rem;
+    font-size: 2rem;
+    transition: all .35s;
+    color: #68655b;
+}
+.footer .contect .icons i:hover{
+    transform: scale(1.2);   /* doubt here */
+    color: yellow;
+}
 
