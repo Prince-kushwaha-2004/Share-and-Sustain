@@ -125,7 +125,7 @@ body{
 .para2 h2{
     color: #BD1E51;
     font-size: 3rem;
-    margin-left: 2rem
+    margin: 2rem;
 }
 .para2 p{
     margin: 0rem 2rem;
@@ -294,6 +294,7 @@ form img{
 .footer .contect .icons{
     color: #68655b;
     background-color: #490B3D;
+    margin-top: 1rem;
     padding: 1rem;
     border-radius: 10px;
 
