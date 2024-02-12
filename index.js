@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 const mysql = require("mysql2")
+const ejsMate=require("ejs-mate");
+
+app.engine('ejs', ejsMate);
 
 const path = require("path");
 const methodOverride = require("method-override");
