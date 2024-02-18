@@ -69,6 +69,19 @@ body{
     background-color:#490B3D;
     color: white;
 }
+.resnev{
+    display: none;
+}
+.resnev i{
+    margin: 1rem;
+    font-size: 2rem;
+    transition: all linear .2s;
+    color: #490B3D;
+}
+.resnev i:hover{
+    transform: scale(1.2);
+    color: #BD1E51;
+}
 #logo{
     width: 20rem;
 }
@@ -134,7 +147,8 @@ body{
 /* container */
 .container{
     margin: 1rem;
-    background-color: #F1B814;
+    background-color: #ecdc4b6b;
+    border: 1px solid #F1B814;
     padding: 1rem 2rem;
     border-radius: 2rem;
     text-align: center;
@@ -225,7 +239,7 @@ form img{
 }
 .footer{
     background-color: #490B3D;
-    height: 30rem;
+    height: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -310,3 +324,203 @@ form img{
     color: yellow;
 }
 
+
+@media (max-width: 1220px) {
+    .resnev{
+        display: block;
+    }
+    .navOptions{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: -30rem;
+        width: 20rem;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        background-color: #93e5633f;
+        box-shadow: 3px 3px 3px black;
+        padding: 2rem;
+        transition: all linear .5s;
+    }
+}
+@media (max-width: 1035px){
+    #welcome{
+        flex-direction: column;
+    }
+    .content h1{
+        position: sticky;
+    }
+    .para2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .para1{
+        flex-direction: column-reverse;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .container .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .contect,.footer .form{
+        width: 90%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 610px){
+    .logo h2{
+        display: none;
+    }
+    .para2 img{
+        width: 20rem;
+        border-radius: .5rem;
+    }
+    .footer .contect,.footer .form{
+        width: 83%;
+        margin-left: 0;
+    }
+}
+.resNev{
+    left: 0;
+}
+
+.donation-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(8, 218, 8);
+    background-color: rgba(46, 224, 46, 0.355);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.donation-message h1,.donation-form h1{
+    color: #BD1E51;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.donation-message p{
+    margin: 0rem 2rem;
+    font-size:1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 1rem;
+
+}
+.donation-form p{
+    margin: 0rem 2rem;
+    font-size:1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+}
+.donation-message button,.donation-form button{
+    border: 0;
+    background-color: #BD1E51;
+    color: white;
+    margin-left: 1rem;
+    padding: .8rem;
+    border-radius: 2rem;
+    transition: all linear .5s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.donation-message button:hover,.donation-form button:hover{
+    background-color:#490B3D;
+    color: white;
+}
+.donation-form {
+    text-align: center;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f8f859;
+    backdrop-filter: blur(10px);
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.donation-form label {
+    display:inline block;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.donation-form input,
+.donation-form textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.donation-form input[type="date"],
+.donation-form input[type="time"] {
+    width: 30%;
+    margin-right: 4%;
+}
+.user form .donation-button{
+    border:1px solid rgb(8, 218, 8);
+    background-color: rgba(46, 224, 46, 0.684); 
+    width: auto;
+}
+.user form .donation-button:hover{
+    background-color: #490B3D;
+}
+.notifications{
+    border:1px solid rgb(8, 218, 8);
+    background-color: rgba(46, 224, 46, 0.355);
+    border-radius: 2rem;
+    margin: 2rem;
+    width: auto;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.notifications .message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notifications .message button{
+    padding: .8rem;
+    background-color: rgb(8, 183, 8);
+    font-size: 1.1rem;
+    border: 0;
+    color: white;
+    border-radius: 2rem;
+}
+.notifications .message button:hover{
+    background-color: rgb(8, 183, 151);
+}
+.notifications .message h2{
+    color: rgb(19, 69, 208);
+}
+.notifications .message h3{
+    color: #7d0b68;
+}
+@media (max-width: 610px){
+    .notifications .message{
+        flex-direction: column;
+    }
+    .notifications{
+        margin: .5rem;
+    }
+}
+@media (max-width: 580px){
+    .user h3{
+        display: none;
+    }
+}

@@ -1,0 +1,45 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+    <body>
+        <%- include("includes/usernevbar.ejs")%>
+            <div class="notifications">
+                <%for(donation of data.result){%>
+                    <br>
+                    <div class="message">
+                        <div class="info">
+                            <h2><i class="fa-solid fa-user"></i>
+                                <%=donation.name%>
+                            </h2><br>
+                            <h3>
+                                <%=donation.comment%>
+                            </h3>
+                            <p>
+                                <%=donation.date.toString().split(' ').slice(0, 4).join(' ')%>&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;<%=donation.time%></p>
+                        <p><%=donation.address%></p><br>
+                        <p><a href=""><%=donation.email%></a>&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;<a href=""><%=donation.mobile%></a></p>
+                    </div><br>
+                    
+                    <button>Accept Donation</button>
+                    
+
+                </div>
+                <br>
+                <hr>
+            <%}%>
+        </div>  
+
+        <%- include("includes/footer.ejs")%>
+
+        <script>
+            message = document.querySelector(".notifications");
+            message.addEventListener("click", function (event) {
+                if (event.target.nodeName == "BUTTON") {
+                    del = event.target
+                    del.parentElement.querySelector(".info").style.textDecoration = "line-through";
+                    del.innerText = "Accepted by @<%=data.username%>";
+                    del.style.backgroundColor = "rgb(8, 183, 151)";
+                }
+            })
+     
+            </script>
+    </body>

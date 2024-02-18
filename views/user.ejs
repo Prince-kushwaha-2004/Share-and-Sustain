@@ -16,7 +16,16 @@
             <img src="assets/logo.png" id="logo" alt="logo">
 
         </div>
-    </div>   
+    </div>  
+    <div class="donation-message">
+        <h1>Make a Difference, Share a Meal!</h1>
+        <p>Every small act of kindness counts. Join us in our mission to reduce food wastage and fight hunger. Your donation can make a real impact in someone's life.</p>
+        <form action="/user/donation/<%=data.email%>" method="GET">
+            <button>Donate Now</button>
+        </form>
+        
+    </div>
+     
     <%- include("includes/content.ejs")%>
 
     <%- include("includes/howitworks.ejs")%>
