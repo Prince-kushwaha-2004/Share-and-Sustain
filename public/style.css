@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 p{
 
     font-family: 'Montserrat', sans-serif;
@@ -15,7 +18,7 @@ p{
     width: 100%;
     box-shadow: .5px .5px 10px .5px  #cec9bb;
     margin: 0;
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 0;
 
@@ -174,7 +177,7 @@ body{
 .signupform,.loginform{
     backdrop-filter: blur(5px);
     background-color: #e5df633f;
-    position: absolute;
+    position: fixed;
     top: -50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -228,7 +231,7 @@ form img{
     top: 51%;
 }
 .close{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(154, 244, 222, 0.273);
@@ -323,6 +326,15 @@ form img{
     transform: scale(1.2);   /* doubt here */
     color: yellow;
 }
+.coppyright{
+    width: 100%;
+    margin: 0;
+    padding:1rem 0rem;
+    text-align: center;
+    background-color:#490B3D;
+    color: white;
+    font-size: 1.1rem;
+}
 
 
 @media (max-width: 1220px) {
@@ -335,7 +347,7 @@ form img{
         position: fixed;
         top: 4rem;
         left: -30rem;
-        width: 20rem;
+        width: 25rem;
         height: 100%;
         backdrop-filter: blur(5px);
         background-color: #93e5633f;
@@ -399,7 +411,9 @@ form img{
     padding: 1rem;
     border-radius: 1rem;
 }
-.donation-message h1,.donation-form h1{
+.donation-message h1,
+.donation-form h1,
+.working h1{
     color: #BD1E51;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -522,5 +536,71 @@ form img{
 @media (max-width: 580px){
     .user h3{
         display: none;
+    }
+
+}
+.working{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border-radius: 2rem;
+    margin: 1rem;
+    border:1px solid rgb(8, 218, 8);
+    background-color: rgba(46, 224, 46, 0.355);
+    padding: 2rem;
+}
+.working img{
+    width: 70%;
+}
+.NGOS{
+    text-align: center;
+   
+    color: white;
+    margin:1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background: linear-gradient(180deg, rgba(65, 230, 65, 0.789) 0%, rgba(28, 236, 121, 0.625) 35%, rgba(28, 191, 246, 0.575) 100%);
+    height: 28rem;
+    width: 18rem;
+    border-radius:1rem ;
+    margin: 1rem 5rem;
+    transition: all .2s;
+
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card img{
+    height: 15rem;
+    width: 13rem;
+    margin: 1rem;
+    border-radius:1rem ;
+}
+.card h3{
+    font-size: 1rem;
+    line-height: normal;
+    font-size: 1.1rem;
+    padding: .5rem;
+}
+h1{
+    color: #BD1E51;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+#partners .container{
+    border:1px solid rgb(8, 218, 8);
+    background-color: rgba(46, 224, 46, 0.355);
+}
+@media (max-width: 610px){
+    .working img{
+        width: 100%;
     }
 }

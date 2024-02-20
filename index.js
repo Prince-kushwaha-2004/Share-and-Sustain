@@ -33,7 +33,7 @@ app.post("/newuser", (req, res) => {
 
     let { username, email, address, pass1, pass2 } = req.body;
     if (pass1 != pass2) {
-        res.send("password doesnot match");
+        res.render("wrongpassword.ejs");
     } else {
 
 
@@ -60,7 +60,7 @@ app.post("/user", (req, res) => {
                 console.log(data)
                 res.render("user.ejs", { data })
             } else {
-                res.send("Wrong password")
+                res.render("wrongpassword.ejs");
             }
 
         })
